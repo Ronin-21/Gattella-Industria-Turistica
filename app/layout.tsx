@@ -1,17 +1,22 @@
 import { ThemeModeScript } from "flowbite-react";
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import { ThemeInit } from "../.flowbite-react/init";
+import { Poppins } from "next/font/google";
+import localFont from "next/font/local";
+import NavbarComponent from "./components/Navbar";
 import "./globals.css";
+import Footer from "./components/Footer";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const poppins = Poppins({
+  variable: "--font-primary",
+  weight: ["400", "600"],
   subsets: ["latin"],
+  display: "swap",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const restora = localFont({
+  src: "../public/Restora.woff2",
+  variable: "--font-title",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -25,15 +30,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="es" suppressHydrationWarning>
       <head>
         <ThemeModeScript />
       </head>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        <ThemeInit />
+      <body className={`${restora.variable} ${poppins.variable} antialiased`}>
+        {/* <ThemeInit /> */}
+        <NavbarComponent />
         {children}
+        <Footer />
       </body>
     </html>
   );

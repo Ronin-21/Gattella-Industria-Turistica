@@ -2,4 +2,28 @@
 @plugin "flowbite-react/plugin/tailwindcss";
 @source "../.flowbite-react/class-list.json";
 
-@custom-variant dark (&:where(.dark, .dark *));
+/* @custom-variant dark (&:where(.dark, .dark *)); */
+
+@theme {
+  --color-primary: #2a4b9b;
+  --color-secondary: #4f89c6;
+  --color-accent: #fbc201;
+  --color-light: #fef6f4;
+  --color-dark: #0b0b0b;
+  --font-primary: "Poppins", sans-serif;
+  --font-secondary: "Poppins", sans-serif;
+  --font-title: "Restora";
+  --font-hero: "Restora";
+}
+
+#root {
+  min-height: 100dvh;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: white;
+  color: var(--color-dark);
+  font-family: var(--font-primary);
+}
