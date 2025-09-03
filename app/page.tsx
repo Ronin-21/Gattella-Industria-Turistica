@@ -1,4 +1,5 @@
 import AboutSection from "./components/AboutSection";
+import BannerFooter from "./components/BannerFooter";
 import ContactSection from "./components/ContactSection";
 import Hero from "./components/Hero";
 import HotelsSection from "./components/HotelsSection";
@@ -18,6 +19,7 @@ export default function Home() {
       <TestimonialsSection />
       <PackagesSection />
       <ContactSection />
+      <BannerFooter />
     </main>
   );
 }

@@ -29,46 +29,50 @@ const Navbar = () => {
       {/* Sub Navbar */}
       <div className="bg-dark text-light w-full">
         {/* Socials */}
-        <div className="font-secondary border-accent/50 container mx-auto flex items-center justify-between border-b py-4">
-          <div className="flex space-x-4">
+        <div className="border-accent/10 border-b">
+          <div className="font-secondary container mx-auto flex items-center justify-between py-4">
+            <div className="flex space-x-4">
+              <Link
+                href="#"
+                className="hover:text-accent transition-colors duration-200"
+              >
+                <FaFacebookF className="h-6 w-6" />
+              </Link>
+              <Link
+                href="#"
+                className="hover:text-accent transition-colors duration-200"
+              >
+                <FaInstagram className="h-6 w-6" />
+              </Link>
+              <Link
+                href="#"
+                className="hover:text-accent transition-colors duration-200"
+              >
+                <FaTiktok className="h-6 w-6" />
+              </Link>
+            </div>
             <Link
-              href="#"
-              className="hover:text-accent transition-colors duration-200"
+              href="https://wa.me/+543858480489"
+              target="_blank"
+              className="hover:text-accent flex items-center gap-2 transition-colors duration-200"
             >
-              <FaFacebookF className="h-6 w-6" />
-            </Link>
-            <Link
-              href="#"
-              className="hover:text-accent transition-colors duration-200"
-            >
-              <FaInstagram className="h-6 w-6" />
-            </Link>
-            <Link
-              href="#"
-              className="hover:text-accent transition-colors duration-200"
-            >
-              <FaTiktok className="h-6 w-6" />
+              <FaPhoneAlt />
+              <p>+54 (3858) 48 0489</p>
             </Link>
           </div>
-          <Link
-            href="https://wa.me/+543858480489"
-            target="_blank"
-            className="hover:text-accent flex items-center gap-2 transition-colors duration-200"
-          >
-            <FaPhoneAlt />
-            <p>+54 (3858) 48 0489</p>
-          </Link>
         </div>
         {/* Logo */}
-        <div className="border-accent/50 container mx-auto flex items-center justify-center border-b py-4">
-          <Link href="/" className="relative h-24 w-40 overflow-hidden">
-            <Image
-              src={"/logo-white-2.png"}
-              alt="logo"
-              fill
-              className="object-contain"
-            />
-          </Link>
+        <div className="border-accent/10 border-b">
+          <div className="container mx-auto flex items-center justify-center py-4">
+            <Link href="/" className="relative h-24 w-40 overflow-hidden">
+              <Image
+                src={"/logo-white-2.png"}
+                alt="logo"
+                fill
+                className="object-contain"
+              />
+            </Link>
+          </div>
         </div>
       </div>
       {/* Desktop Navigation */}
@@ -81,7 +85,7 @@ const Navbar = () => {
             Inicio
           </button>
           <button
-            onClick={() => scrollToSection("galeria")}
+            onClick={() => scrollToSection("hoteles")}
             className="hover:text-accent cursor-pointer text-lg transition-colors duration-200"
           >
             Hoteles

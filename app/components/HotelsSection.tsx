@@ -41,7 +41,10 @@ const services = [
 
 const HotelsSection = () => {
   return (
-    <div className="bg-dark grid min-h-[600px] w-full grid-cols-5">
+    <section
+      id="hoteles"
+      className="bg-dark grid min-h-[600px] w-full grid-cols-5"
+    >
       {services.map((service, index) => (
         <div
           key={index}
@@ -72,7 +75,7 @@ const HotelsSection = () => {
           </div>
         </div>
       ))}
-    </div>
+    </section>
   );
 };
 
