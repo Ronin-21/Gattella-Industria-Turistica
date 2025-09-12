@@ -2,8 +2,15 @@ import Image from "next/image";
 
 const TestimonialsSection = () => {
   return (
-    <div className="bg-light flex h-[650px] w-full flex-col items-center justify-center">
-      <div className="container mx-auto">
+    <div className="relative flex h-[650px] w-full flex-col items-center justify-center">
+      {/* <Image
+        src="/img-5.jpg"
+        alt="paquetes"
+        fill
+        className="object-cover grayscale"
+      />
+      <div className="absolute inset-0 z-0 bg-light/80" /> */}
+      <div className="z-10 container mx-auto">
         <div className="flex w-full flex-col items-center justify-center gap-8 px-4 text-center sm:px-6 lg:px-8">
           <h2 className="text-primary font-title text-shadow-dark/30 text-3xl font-bold text-shadow-sm sm:text-4xl md:text-5xl">
             Testimonios

@@ -1,93 +1,77 @@
+import Image from "next/image";
 import Link from "next/link";
-import { FaTheaterMasks } from "react-icons/fa";
-import { IoIosFitness, IoIosRestaurant } from "react-icons/io";
-import { MdOutlinePool, MdOutlineSpa, MdWifi } from "react-icons/md";
+import { BiCheck } from "react-icons/bi";
 
-const services = [
-  {
-    icon: <MdOutlinePool />,
-    title: "Piscinas",
-    description: "Piscinas internas y externas con agua termal",
-  },
-  {
-    icon: <IoIosRestaurant />,
-    title: "Restaurante & Bar",
-    description:
-      "Restaurante con menú regional e internacional, y bar con coctelería de autor.",
-  },
-  {
-    icon: <MdWifi />,
-    title: "Wi-Fi",
-    description:
-      "Wi-Fi de alta velocidad en todo el hotel para que te mantengas conectado.",
-  },
-  {
-    icon: <IoIosFitness />,
-    title: "Gimnasio",
-    description:
-      "Gimnasio equipado con máquinas de última generación y clases dirigidas.",
-  },
-  {
-    icon: <MdOutlineSpa />,
-    title: "Spa & Relax",
-    description:
-      "Spa con sauna seco, húmedo y masajes relajantes y terapéuticos.",
-  },
-  {
-    icon: <FaTheaterMasks />,
-    title: "Actividades Recreativas",
-    description: "Shows y actividades recreativas durante la temporada alta.",
-  },
+const features = [
+  "Tv por cable",
+  "Wifi",
+  "Sommier",
+  "Baño privado",
+  "Aire acondicionado",
+  "Baño privado",
+  "Aire acondicionado",
 ];
 
 const ServicesSection = () => {
   return (
-    <section
-      id="servicios"
-      className="container mx-auto flex flex-col items-center justify-evenly gap-20 px-4 py-20 md:my-20"
-    >
-      {/* Servicios */}
-      <div className="flex max-w-3xl flex-col gap-8 md:self-start">
-        <div className="flex w-full items-center justify-between px-2 sm:px-0">
-          <div className="flex flex-col items-start gap-2">
-            <h4 className="text-lg sm:text-xl md:text-2xl">
-              Nuestros Servicios
-            </h4>
-            <h3 className="text-primary font-title text-shadow-dark/30 text-3xl font-bold text-shadow-sm sm:text-4xl md:text-5xl">
-              Servicios
-            </h3>
+    <section id="servicios" className="my-40">
+      <div className="container mx-auto flex h-[600px] items-center justify-center">
+        {/* Images */}
+        <div className="relative h-full w-1/2">
+          <Image
+            alt=""
+            src="/img-7.jpg"
+            width={700}
+            height={500}
+            className="shadow-dark/50 absolute top-0 left-0 shadow-lg"
+          />
+          <Image
+            alt=""
+            src="/img-5.jpg"
+            width={400}
+            height={400}
+            className="shadow-dark/50 absolute right-0 bottom-20 h-60 object-cover shadow-lg"
+          />
+          <div className="bg-primary shadow-dark/50 absolute bottom-0 flex h-40 max-w-96 items-center p-5 text-center leading-relaxed text-white shadow-lg">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+              impedit fuga at. Vel, culpa ea?
+            </p>
           </div>
         </div>
-        <p className="text-dark/60 text-center text-base sm:text-lg md:text-left">
-          En nuestro hotel, cada servicio está pensado para que disfrutes una
-          estadía sin preocupaciones, rodeado de confort y atención
-          personalizada.
-        </p>
-      </div>
-      {/* Iconos */}
-      <div className="grid w-full max-w-7xl grid-cols-1 justify-items-center gap-8 px-2 sm:grid-cols-2 md:grid-cols-3">
-        {services.map((service, index) => (
-          <div
-            key={index}
-            className="border-primary group flex max-w-xs flex-col items-center gap-4 rounded-md bg-white p-6 shadow-lg transition-all duration-200 hover:border-b-4 hover:shadow-black/50"
-          >
-            <div className="text-primary text-4xl sm:text-5xl">
-              {service.icon}
+        {/* Content */}
+        <div className="flex h-full w-1/2 flex-col items-start gap-5 p-10">
+          <p className="text-secondary">Nuestros Servicios</p>
+          <h3 className="font-title text-primary text-5xl font-semibold">
+            Lorem ipsum, dolor sit amet
+          </h3>
+          <p className="text-dark/60 mt-10">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora
+            placeat commodi blanditiis accusamus similique alias? Non culpa, sed
+            ex tenetur blanditiis esse molestias neque reprehenderit, dolor
+            debitis aliquid? Delectus, dolorum.
+          </p>
+
+          <div className="mt-10">
+            <div className="font-secondary grid w-xl grid-cols-2 gap-x-10 gap-y-4 text-xl">
+              {features.slice(0, 6).map((feature, index) => (
+                <div key={index} className="flex items-center gap-1 text-sm">
+                  <BiCheck className="text-accent h-6 w-6" />
+                  <span className="truncate">{feature}</span>
+                </div>
+              ))}
             </div>
-            <h3 className="text-lg font-semibold sm:text-xl">
-              {service.title}
-            </h3>
-            <p className="text-dark/50 text-center text-sm sm:text-base">
-              {service.description}
-            </p>
-            <Link
-              href={"/reservas"}
-              className="hover:text-primary group-hover:animate-fade-right group-hover:animate-duration-[2000ms] mt-4 text-base font-medium transition-colors duration-200 sm:text-lg"
-            >
-              Reservar
-            </Link>
           </div>
-        ))}
+
+          <Link
+            href={"https://wa.me/+543858421018"}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:bg-dark font-secondary bg-accent hover:shadow-dark/50 text-shadow-dark/20 mt-10 cursor-pointer px-6 py-2 text-lg font-semibold text-white transition duration-500 ease-in-out text-shadow-md hover:shadow-md"
+          >
+            Contáctanos
+          </Link>
+        </div>
       </div>
     </section>
   );
