@@ -1,8 +1,4 @@
 @import "tailwindcss";
-@plugin "flowbite-react/plugin/tailwindcss";
-@source "../.flowbite-react/class-list.json";
-
-/* @custom-variant dark (&:where(.dark, .dark *)); */
 
 @theme {
   --color-primary: #2a4b9b;

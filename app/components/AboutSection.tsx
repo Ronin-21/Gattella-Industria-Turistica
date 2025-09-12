@@ -4,8 +4,8 @@ import Link from "next/link";
 const AboutSection = () => {
   return (
     <section className="py-40">
-      <div className="container mx-auto flex h-[400px] items-center justify-around px-10">
-        <div className="flex h-full w-1/2 flex-col items-start justify-center gap-10">
+      <div className="container mx-auto flex min-h-[400px] flex-col items-center justify-around md:flex-row md:px-10">
+        <div className="flex h-full flex-col items-start justify-center gap-10 md:w-1/2">
           <h3 className="font-title text-primary text-5xl font-semibold">
             Lorem ipsum dolor sit amet
           </h3>
@@ -23,15 +23,15 @@ const AboutSection = () => {
           </Link>
         </div>
         {/* Images */}
-        <div className="relative hidden h-full w-1/2 md:flex">
+        <div className="relative flex h-[400px] md:w-1/2">
           <Image
             src="/img-5.jpg"
             alt="Banner Image"
             width={450}
             height={300}
-            className="shadow-dark/50 absolute top-0 right-0 z-10 h-[300px] w-[450px] -translate-x-20 object-cover shadow-lg"
+            className="shadow-dark/50 top-0 right-0 z-10 h-[300px] object-cover shadow-lg md:absolute md:w-[450px] md:-translate-x-20"
           />
-          <div className="bg-secondary absolute bottom-0 h-[200px] w-full"></div>
+          <div className="bg-secondary bottom-0 h-[200px] w-full md:absolute"></div>
         </div>
       </div>
     </section>

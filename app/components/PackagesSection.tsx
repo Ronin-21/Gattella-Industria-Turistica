@@ -7,7 +7,7 @@ const PackagesSection = () => {
       id="paquetes"
       className="my-20 flex min-h-screen w-full flex-col items-center justify-center gap-20"
     >
-      <div className="flex w-full max-w-3xl flex-col items-center justify-center gap-8 px-4 text-center sm:px-6 lg:px-8">
+      <div className="flex w-full max-w-3xl flex-col items-center justify-center gap-8 text-center">
         <h2 className="text-primary font-title text-shadow-dark/30 text-3xl font-bold text-shadow-sm sm:text-4xl md:text-5xl">
           Paquetes
         </h2>
@@ -17,8 +17,8 @@ const PackagesSection = () => {
           quibusdam distinctio.
         </p>
       </div>
-      <div className="flex h-[600px] w-full max-w-7xl items-center justify-center gap-4 p-4 sm:px-6 lg:px-8">
-        <div className="relative flex h-full w-[550px] items-center justify-center overflow-hidden">
+      <div className="flex h-[600px] w-full max-w-7xl flex-col items-center justify-center gap-4 md:flex-row">
+        <div className="relative flex h-full w-full items-center justify-center overflow-hidden md:w-[550px]">
           <Image
             src="/img-6.jpg"
             alt="paquetes"

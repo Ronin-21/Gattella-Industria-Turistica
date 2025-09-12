@@ -1,5 +1,5 @@
 {
-  "name": "flowbite-react-template-nextjs",
+  "name": "gattella-industria-turistica",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -11,8 +11,6 @@
     "format:check": "prettier . --check"
   },
   "dependencies": {
-    "@emotion/react": "^11.14.0",
-    "flowbite-react": "^0.12.4",
     "next": "^15.4.2",
     "react": "^19.1.0",
     "react-awesome-reveal": "^4.3.1",

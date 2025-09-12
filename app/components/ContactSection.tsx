@@ -14,7 +14,7 @@ const ContactSection = () => {
         quality={75}
         className="object-cover"
       />
-      <form className="bg-light/40 shadow-dark/30 z-10 flex h-[500px] w-[850px] flex-col items-center justify-center gap-10 p-5 shadow-lg backdrop-blur-sm">
+      <form className="bg-light/40 shadow-dark/30 z-10 flex h-[500px] w-full flex-col items-center justify-center gap-10 p-5 shadow-lg backdrop-blur-sm md:w-[850px]">
         <h4 className="font-title text-accent text-shadow-dark/50 text-5xl font-semibold text-shadow-md">
           Contacto
         </h4>
