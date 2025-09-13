@@ -11,8 +11,8 @@ const Hero = () => {
     >
       {/* Imagen de fondo */}
       <Image
-        src="/img-8.jpg"
-        alt="Vista exterior del Grand Hotel Principado"
+        src="/img-8.webp"
+        alt="Portada Dique Rio Dulce"
         fill
         priority
         quality={75}
@@ -29,10 +29,10 @@ const Hero = () => {
           className="text-shadow-dark/50 mx-auto max-w-5xl px-4 text-center text-white text-shadow-md"
         >
           <h1 className="font-hero mb-6 text-5xl font-semibold md:text-8xl">
-            Tu escapada ideal comienza aquí
+            Gattella Industria Turística
           </h1>
           <h2 className="font-secondary text-accent mx-auto max-w-3xl text-xl leading-relaxed font-semibold italic md:text-3xl">
-            Confort, gastronomía y relax termal en pleno centro de Termas
+            Confort, gastronomía y relax en Termas de Río Hondo
           </h2>
         </Fade>
       </div>

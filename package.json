@@ -11,6 +11,7 @@
     "format:check": "prettier . --check"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "next": "^15.4.2",
     "react": "^19.1.0",
     "react-awesome-reveal": "^4.3.1",

@@ -22,7 +22,7 @@ const WelcomeSection = () => {
       </div>
       <div className="shadow-dark/50 left-0 shadow-lg md:absolute md:bottom-1/2 md:translate-y-1/2">
         <Image
-          src="/img-1.jpg"
+          src="/img-1.webp"
           alt="Welcome"
           width={700}
           height={600}
@@ -31,7 +31,7 @@ const WelcomeSection = () => {
       </div>
       <div className="shadow-dark/50 bottom-0 shadow-lg md:absolute md:right-1/2 md:translate-x-10/12">
         <Image
-          src="/img-2.jpg"
+          src="/img-2.webp"
           alt="Welcome"
           width={600}
           height={350}

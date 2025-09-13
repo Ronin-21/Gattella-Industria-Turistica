@@ -1,8 +1,23 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import { FaFacebookF, FaInstagram, FaTiktok } from "react-icons/fa";
 
 const Footer = () => {
+  // Función para desplazarse a una sección
+  const scrollToSection = (id: string) => {
+    if (typeof window !== "undefined") {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  };
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
   return (
     <div className="bg-dark flex w-full flex-col items-center justify-center">
       <div className="container flex h-full flex-col items-center justify-center gap-10 px-6 pt-10 text-base text-white md:flex-row md:items-start md:justify-around md:gap-0 md:px-0 md:text-lg">
@@ -11,7 +26,7 @@ const Footer = () => {
           <Link href={"/"}>
             <Image
               alt="logo"
-              src={"/logo-white-2.png"}
+              src={"/logo-white-2.webp"}
               height={50}
               width={150}
             />
@@ -19,19 +34,19 @@ const Footer = () => {
           <div className="mt-4 flex items-center justify-center gap-4 text-xl md:text-2xl">
             <Link
               href={"/"}
-              className="hover:text-primary transition-colors duration-100"
+              className="hover:text-accent transition-colors duration-100"
             >
               <FaFacebookF />
             </Link>
             <Link
               href={"/"}
-              className="hover:text-primary transition-colors duration-100"
+              className="hover:text-accent transition-colors duration-100"
             >
               <FaInstagram />
             </Link>
             <Link
               href={"/"}
-              className="hover:text-primary transition-colors duration-100"
+              className="hover:text-accent transition-colors duration-100"
             >
               <FaTiktok />
             </Link>
@@ -41,44 +56,45 @@ const Footer = () => {
         {/* Links */}
         <div className="flex flex-col items-center justify-center gap-2 text-center md:items-center md:text-left">
           <p className="mb-4 text-lg font-semibold md:text-2xl">Links</p>
-          <Link
-            href={"/nosotros"}
-            className="hover:text-primary transition-colors duration-100"
+
+          <button
+            onClick={() => scrollToSection("hoteles")}
+            className="hover:text-accent cursor-pointer transition-colors duration-200"
           >
-            Historia
-          </Link>
-          <Link
-            href={"/galeria"}
-            className="hover:text-primary transition-colors duration-100"
+            Hoteles
+          </button>
+          <button
+            onClick={() => scrollToSection("servicios")}
+            className="hover:text-accent cursor-pointer transition-colors duration-200"
           >
-            Galería
-          </Link>
-          <Link
-            href={"/habitaciones"}
-            className="hover:text-primary transition-colors duration-100"
+            Servicios
+          </button>
+          <button
+            onClick={() => scrollToSection("paquetes")}
+            className="hover:text-accent cursor-pointer transition-colors duration-200"
           >
-            Habitaciones
-          </Link>
+            Paquetes
+          </button>
         </div>
 
         {/* Ayuda */}
         <div className="flex flex-col items-center justify-center gap-2 text-center md:items-center md:text-left">
           <p className="mb-4 text-lg font-semibold md:text-2xl">Ayuda</p>
-          <Link
-            href={"/"}
-            className="hover:text-primary transition-colors duration-100"
+          <button
+            onClick={scrollToTop}
+            className="hover:text-accent cursor-pointer transition-colors duration-200"
           >
             Inicio
-          </Link>
-          <Link
-            href={"/contacto"}
-            className="hover:text-primary transition-colors duration-100"
+          </button>
+          <button
+            onClick={() => scrollToSection("contacto")}
+            className="hover:text-accent cursor-pointer transition-colors duration-200"
           >
-            Contacto
-          </Link>
+            Contácto
+          </button>
           <Link
             href={"/"}
-            className="hover:text-primary transition-colors duration-100"
+            className="hover:text-accent transition-colors duration-100"
           >
             Política de privacidad
           </Link>
@@ -87,22 +103,23 @@ const Footer = () => {
         {/* Contactos */}
         <div className="flex flex-col items-center justify-center gap-2 text-center md:items-center md:text-left">
           <p className="mb-4 text-lg font-semibold md:text-2xl">Contáctos</p>
-          <p>Av. Manuel Belgrano 245</p>
           <p>Las Termas de Rio Hondo - Sgo. del Estero</p>
           <p>+54 9 3858 42-1018</p>
-          <p>reservas@gattellaindustriaturistica.com</p>
+          <Link href={"mailto:reservas@gattellaindustriaturistica.com"}>
+            reservas@gattellaindustriaturistica.com
+          </Link>
         </div>
       </div>
 
       {/* Derechos y autoría */}
-      <div className="border-primary/50 mt-2 border-t-2 px-4 pt-6 pb-8 text-center">
+      <div className="border-accent/30 mt-8 border-t-2 px-4 pt-6 pb-8 text-center">
         <p className="text-sm text-white md:text-base">
           © 2025 Hotel City · Todos los derechos reservados · Sitio
           desarrollado por
           <Link
             href={"https://ronin-webdesign.vercel.app/"}
             target="_blank"
-            className="text-primary transition-all duration-100 hover:font-semibold"
+            className="text-accent transition-all duration-100 hover:font-semibold"
           >
             {" "}
             Ronin WebDesign{" "}
@@ -111,7 +128,7 @@ const Footer = () => {
           <Link
             href={"https://www.aldereteinformatica.com.ar"}
             target="_blank"
-            className="text-primary transition-all duration-100 hover:font-semibold"
+            className="text-accent transition-all duration-100 hover:font-semibold"
           >
             {" "}
             Alderete Informática

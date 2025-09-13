@@ -19,7 +19,7 @@ const TestimonialsSection = () => {
           <div className="flex h-full flex-col items-center justify-center gap-5 p-4 text-center">
             <div className="relative mb-5 flex h-40 w-40 items-center justify-center">
               <Image
-                src={"/img-8.jpg"}
+                src={"/img-8.webp"}
                 alt="testimonial"
                 fill
                 className="z-20 rounded-full object-cover"
@@ -36,7 +36,7 @@ const TestimonialsSection = () => {
           <div className="flex h-full flex-col items-center justify-center gap-5 p-4 text-center">
             <div className="relative mb-5 flex h-40 w-40 items-center justify-center">
               <Image
-                src={"/img-8.jpg"}
+                src={"/img-8.webp"}
                 alt="testimonial"
                 fill
                 className="z-20 rounded-full object-cover"
@@ -53,7 +53,7 @@ const TestimonialsSection = () => {
           <div className="flex h-full flex-col items-center justify-center gap-5 p-4 text-center">
             <div className="relative mb-5 flex h-40 w-40 items-center justify-center">
               <Image
-                src={"/img-8.jpg"}
+                src={"/img-8.webp"}
                 alt="testimonial"
                 fill
                 className="z-20 rounded-full object-cover"

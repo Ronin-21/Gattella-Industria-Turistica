@@ -66,7 +66,7 @@ const Navbar = () => {
           <div className="container mx-auto flex items-center justify-center py-4">
             <Link href="/" className="relative h-24 w-40 overflow-hidden">
               <Image
-                src={"/logo-white-2.png"}
+                src={"/logo-white-2.webp"}
                 alt="logo"
                 fill
                 className="object-contain"

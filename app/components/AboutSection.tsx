@@ -25,7 +25,7 @@ const AboutSection = () => {
         {/* Images */}
         <div className="relative flex h-[400px] md:w-1/2">
           <Image
-            src="/img-5.jpg"
+            src="/img-5.webp"
             alt="Banner Image"
             width={450}
             height={300}

@@ -20,7 +20,7 @@ const PackagesSection = () => {
       <div className="flex h-[600px] w-full max-w-7xl flex-col items-center justify-center gap-4 md:flex-row">
         <div className="relative flex h-full w-full items-center justify-center overflow-hidden md:w-[550px]">
           <Image
-            src="/img-6.jpg"
+            src="/img-6.webp"
             alt="paquetes"
             fill
             className="object-cover grayscale"
@@ -44,28 +44,28 @@ const PackagesSection = () => {
         </div>
         <div className="grid h-full w-full grid-cols-2 grid-rows-2 gap-4">
           <Image
-            src="/img-3.jpg"
+            src="/img-3.webp"
             alt="paquetes"
             width={800}
             height={600}
             className="h-full w-full object-cover"
           />
           <Image
-            src="/img-4.png"
+            src="/img-4.webp"
             alt="paquetes"
             width={800}
             height={600}
             className="h-full w-full object-cover"
           />
           <Image
-            src="/img-5.jpg"
+            src="/img-5.webp"
             alt="paquetes"
             width={800}
             height={600}
             className="h-full w-full object-cover"
           />
           <Image
-            src="/img-7.jpg"
+            src="/img-7.webp"
             alt="paquetes"
             width={800}
             height={600}

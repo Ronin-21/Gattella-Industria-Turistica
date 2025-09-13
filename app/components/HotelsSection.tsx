@@ -34,7 +34,7 @@ const services = [
     title: "Hotel Suiza",
     description:
       "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
-    imageUrl: "/hotel-suiza.png",
+    imageUrl: "/hotel-suiza.webp",
     site: "https://hotelsuizatermal.com/",
   },
 ];

@@ -19,15 +19,15 @@ const ServicesSection = () => {
         {/* Images */}
         <div className="relative h-[600px] w-full md:w-1/2">
           <Image
-            alt=""
-            src="/img-7.jpg"
+            alt="Servicios"
+            src="/img-7.webp"
             width={700}
             height={500}
             className="shadow-dark/50 top-0 left-0 w-full shadow-lg md:absolute md:w-[700px]"
           />
           <Image
-            alt=""
-            src="/img-5.jpg"
+            alt="Servicios"
+            src="/img-5.webp"
             width={400}
             height={400}
             className="shadow-dark/50 right-0 bottom-20 h-60 w-full object-cover shadow-lg md:absolute md:w-[400px]"
