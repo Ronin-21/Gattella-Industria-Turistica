@@ -34,12 +34,14 @@ const Footer = () => {
           <div className="mt-4 flex items-center justify-center gap-4 text-xl md:text-2xl">
             <Link
               href={"https://www.facebook.com/profile.php?id=61580480652128"}
+              target="_blank"
               className="hover:text-accent transition-colors duration-100"
             >
               <FaFacebookF />
             </Link>
             <Link
               href={"https://www.instagram.com/gattella_industria_turistica/"}
+              target="_blank"
               className="hover:text-accent transition-colors duration-100"
             >
               <FaInstagram />
@@ -67,7 +69,7 @@ const Footer = () => {
             onClick={() => scrollToSection("paquetes")}
             className="hover:text-accent cursor-pointer transition-colors duration-200"
           >
-            Paquetes
+            Travel Sale
           </button>
         </div>
 
@@ -99,10 +101,17 @@ const Footer = () => {
           <p className="mb-4 text-lg font-semibold md:text-2xl">Contáctos</p>
           <p>Las Termas de Rio Hondo - Sgo. del Estero</p>
           <p>Argentina</p>
-          <Link href="https://wa.me/+543858538691" target="_blank">
+          <Link
+            href="https://wa.me/+543858538691"
+            target="_blank"
+            className="hover:text-accent transition-colors duration-100"
+          >
             <p>+54 9 3858 53-8691</p>
           </Link>
-          <Link href={"mailto:reservas@gattellaindustriaturistica.com"}>
+          <Link
+            href={"mailto:reservas@gattellaindustriaturistica.com"}
+            className="hover:text-accent transition-colors duration-100"
+          >
             reservas@gattellaindustriaturistica.com
           </Link>
         </div>

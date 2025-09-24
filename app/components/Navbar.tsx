@@ -96,7 +96,7 @@ const Navbar = () => {
             onClick={() => scrollToSection("paquetes")}
             className="hover:text-accent cursor-pointer text-lg transition-colors duration-200"
           >
-            Paquetes
+            Travel Sale
           </button>
           <button
             onClick={() => scrollToSection("contacto")}

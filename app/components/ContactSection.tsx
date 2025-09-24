@@ -19,9 +19,9 @@ const ContactSection = () => {
         <h4 className="font-title text-accent text-shadow-dark/50 text-5xl font-semibold text-shadow-md">
           Contacto
         </h4>
-        <p className="w-full max-w-xs text-center">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat,
-          veritatis?
+        <p className="w-full max-w-xl text-center">
+          Estamos para ayudarte, escribinos y conversemos sobre tu próxima
+          experiencia
         </p>
         <ContactForm />
         <p></p>

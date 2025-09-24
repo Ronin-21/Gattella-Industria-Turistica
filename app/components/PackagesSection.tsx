@@ -9,12 +9,12 @@ const PackagesSection = () => {
     >
       <div className="flex w-full max-w-3xl flex-col items-center justify-center gap-8 text-center">
         <h2 className="text-primary font-title text-shadow-dark/30 text-3xl font-bold text-shadow-sm sm:text-4xl md:text-5xl">
-          Paquetes
+          Travel Sale
         </h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, veniam
-          ea. Fugit repellat numquam necessitatibus laudantium doloribus vero
-          quibusdam distinctio.
+          Explorá cada hotel, dejate inspirar por sus espacios y contactanos hoy
+          mismo para asegurar tu lugar al mejor precio. Porque las mejores
+          experiencias… ¡también están en oferta!
         </p>
       </div>
       <div className="flex h-[600px] w-full max-w-7xl flex-col items-center justify-center gap-4 md:flex-row">
@@ -36,16 +36,18 @@ const PackagesSection = () => {
             Tu navegador no soporta el video HTML5.
           </video>
           <div className="absolute inset-0 bg-black/70" />
-          <div className="text-light z-10 flex h-full w-full flex-col items-center justify-center gap-4 p-8 text-center">
-            <p className="font-title text-accent text-4xl">
-              Viví Termas todo el año
+          <div className="text-light z-10 flex h-full w-full flex-col items-center justify-center gap-6 p-6 text-center">
+            <p className="font-title text-accent w-full text-4xl">
+              Bienestar y alegría sin importar la estación
             </p>
             <p className="text-light/85 text-sm leading-relaxed text-balance">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Similique, porro!
+              Nuestra Travel Sale es tu oportunidad de vivir la experiencia de
+              nuestros hoteles con promociones exclusivas que combinan descanso,
+              diversión, buena comida y hospitalidad de excelencia
             </p>
             <Link
-              href={"mailto:reservas@gattellaindustriaturistica.com"}
+              href="https://wa.me/+543858538691"
+              target="_blank"
               className="hover:bg-primary font-secondary bg-secondary hover:shadow-dark/50 text-shadow-dark/20 mt-6 cursor-pointer px-6 py-2 text-lg font-semibold text-white transition duration-500 ease-in-out text-shadow-md hover:shadow-md"
             >
               Ver mas

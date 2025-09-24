@@ -1,84 +1,66 @@
 import Image from "next/image";
 import Link from "next/link";
-import { BiCheck } from "react-icons/bi";
-import { ImQuotesLeft, ImQuotesRight } from "react-icons/im";
-
-const features = [
-  "3 noches de alojamiento",
-  "Todas las comidas con bebidas incluídas",
-  "Actividades durante todo el dia",
-  "Fiestas temáticas",
-  "Gran elección de la Reina del Termalazo",
-];
 
 const ServicesSection = () => {
   return (
-    <section id="servicios" className="my-40">
-      <div className="container mx-auto flex min-h-[400px] flex-col items-center justify-center md:flex-row">
-        {/* Images */}
-        <div className="relative h-[600px] w-full md:w-1/2">
-          <Image
-            alt="termalazo"
-            src="/termalazo-1.jpg"
-            width={700}
-            height={500}
-            className="shadow-dark/50 top-0 left-0 w-full shadow-lg md:absolute md:w-[700px]"
-          />
-          <Image
-            alt="termalazo"
-            src="/termalazo-2.jpg"
-            width={400}
-            height={400}
-            className="shadow-dark/50 right-0 bottom-20 h-60 w-full object-cover shadow-lg md:absolute md:w-[400px]"
-          />
-          <div className="bg-primary shadow-dark/60 font-title absolute bottom-0 left-10 flex h-40 max-w-96 items-center rounded-md p-5 text-center text-lg leading-relaxed text-white italic shadow-md">
-            <p className="z-10">
-              Lo que pasa en el Caribe Santiagueño… queda en el Caribe
-              Santiagueño.
-            </p>
-            <ImQuotesLeft className="text-secondary/40 absolute top-5 left-3 hidden text-5xl md:block" />
-            <ImQuotesRight className="text-secondary/40 absolute right-3 bottom-5 hidden text-5xl md:block" />
-          </div>
-        </div>
-        {/* Content */}
-        <div className="flex h-full w-full flex-col items-start gap-5 p-10 md:w-1/2">
-          <p className="text-secondary">Nuestros Eventos</p>
-          <h3 className="font-termalazo text-5xl font-semibold text-cyan-400">
-            TER<span className="text-lime-400">MAL</span>
-            <span className="text-orange-400">AZO</span>
+    <section className="py-40" id="servicios">
+      <div className="container mx-auto flex min-h-[600px] flex-col items-center justify-around md:flex-row md:px-10">
+        <div className="flex h-full flex-col items-start justify-center gap-10 md:w-1/2">
+          <h3 className="font-title text-primary text-5xl font-semibold">
+            Servicios
           </h3>
-          <p className="text-dark/60 mt-10">
-            La experiencia que convierte a Termas de Río Hondo en el verdadero
-            Caribe Santiagueño. Durante 4 días y 3 noches, viví diversión sin
-            pausa: actividades durante el día, shows en vivo todas las noches,
-            la elección de la Reina y una atmósfera de fiesta que no se
-            encuentra en ningún otro lugar.
+          <p className="max-w-md">
+            En todos nuestros hoteles te ofrecemos una experiencia completa de
+            descanso y entretenimiento.
           </p>
-          <p className="text-dark/60">
-            Con amigos, en pareja o en grupo, vení a disfrutar de música,
-            alegría y energía termal en un evento que vas a recordar para
-            siempre.
+          <p className="max-w-md">
+            Todos nuestros hoteles están diseñados para que disfrutes de una
+            estadía única, combinando descanso, diversión y bienestar. La tarifa
+            incluye desayuno buffet cada mañana, acceso a piscinas termales,
+            sauna, actividades recreativas y cochera opcional.
           </p>
-
-          <div className="mt-10">
-            <div className="font-secondary grid w-full grid-cols-2 gap-x-10 gap-y-4 text-xl md:w-xl">
-              {features.slice(0, 6).map((feature, index) => (
-                <div key={index} className="flex items-center gap-1 text-sm">
-                  <BiCheck className="text-accent h-6 w-6" />
-                  <span className="truncate">{feature}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-
+          <p className="max-w-md">
+            Las habitaciones cuentan con camas sommier, TV con cable, aire
+            acondicionado y bañera con hidromasaje, además de otros detalles que
+            aseguran tu comodidad.
+          </p>
+          <p className="max-w-md">
+            Para quienes buscan una experiencia aún más completa, ofrecemos
+            servicio de restaurante, bar y masajes, ideales para relajarte y
+            dejarte llevar por el espíritu de Termas.
+          </p>
           <Link
-            href={"https://wa.me/+543858538691"}
+            href={"https://wa.me/+543858421018"}
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:bg-dark font-secondary bg-accent hover:shadow-dark/50 text-shadow-dark/20 mt-10 cursor-pointer px-6 py-2 text-lg font-semibold text-white transition duration-500 ease-in-out text-shadow-md hover:shadow-md"
+            className="hover:bg-dark font-secondary bg-accent hover:shadow-dark/50 text-shadow-dark/20 cursor-pointer px-6 py-2 text-lg font-semibold text-white transition duration-500 ease-in-out text-shadow-md hover:shadow-md"
           >
             Contáctanos
           </Link>
+        </div>
+        {/* Images */}
+        <div className="relative flex h-[600px] md:w-1/2">
+          <Image
+            src="/hotel-ambassador-4.jpg"
+            alt="Banner Image"
+            width={450}
+            height={300}
+            className="shadow-dark/80 top-0 right-0 z-10 h-[300px] rounded-md object-cover shadow-lg md:absolute md:w-[450px] md:-translate-x-20 md:translate-y-20"
+          />
+          <Image
+            src="/hotel-principado-1.jpg"
+            alt="Banner Image"
+            width={450}
+            height={300}
+            className="shadow-dark/60 bottom-0 z-0 h-[300px] w-full rounded-md object-cover shadow-lg md:absolute"
+          />
+          <Image
+            src="/hotel-suiza-2.jpg"
+            alt="Banner Image"
+            width={450}
+            height={300}
+            className="shadow-dark/50 top-0 z-0 h-[300px] rounded-md object-cover shadow-lg md:absolute md:w-[450px] md:-translate-x-20 md:-translate-y-10"
+          />
         </div>
       </div>
     </section>
