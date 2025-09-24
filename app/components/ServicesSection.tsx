@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { BiCheck } from "react-icons/bi";
+import { ImQuotesLeft, ImQuotesRight } from "react-icons/im";
 
 const features = [
   "3 noches de alojamiento",
@@ -13,7 +14,7 @@ const features = [
 const ServicesSection = () => {
   return (
     <section id="servicios" className="my-40">
-      <div className="container mx-auto flex min-h-[600px] flex-col items-center justify-center md:flex-row">
+      <div className="container mx-auto flex min-h-[400px] flex-col items-center justify-center md:flex-row">
         {/* Images */}
         <div className="relative h-[600px] w-full md:w-1/2">
           <Image
@@ -30,11 +31,13 @@ const ServicesSection = () => {
             height={400}
             className="shadow-dark/50 right-0 bottom-20 h-60 w-full object-cover shadow-lg md:absolute md:w-[400px]"
           />
-          <div className="bg-primary shadow-dark/50 absolute bottom-0 flex h-40 max-w-96 items-center p-5 text-center leading-relaxed text-white shadow-lg">
-            <p>
-              En Gattella Industria Turística, ofrecemos más que alojamiento,
-              creamos experiencias inolvidables.
+          <div className="bg-primary shadow-dark/60 font-title absolute bottom-0 left-10 flex h-40 max-w-96 items-center rounded-md p-5 text-center text-lg leading-relaxed text-white italic shadow-md">
+            <p className="z-10">
+              Lo que pasa en el Caribe Santiagueño… queda en el Caribe
+              Santiagueño.
             </p>
+            <ImQuotesLeft className="text-secondary/40 absolute top-5 left-3 hidden text-5xl md:block" />
+            <ImQuotesRight className="text-secondary/40 absolute right-3 bottom-5 hidden text-5xl md:block" />
           </div>
         </div>
         {/* Content */}
@@ -69,7 +72,7 @@ const ServicesSection = () => {
           </div>
 
           <Link
-            href={"https://wa.me/+543858421018"}
+            href={"https://wa.me/+543858538691"}
             target="_blank"
             rel="noopener noreferrer"
             className="hover:bg-dark font-secondary bg-accent hover:shadow-dark/50 text-shadow-dark/20 mt-10 cursor-pointer px-6 py-2 text-lg font-semibold text-white transition duration-500 ease-in-out text-shadow-md hover:shadow-md"

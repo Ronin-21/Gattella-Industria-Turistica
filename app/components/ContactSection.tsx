@@ -9,7 +9,7 @@ const ContactSection = () => {
     >
       <Image
         alt="Contact Background"
-        src={"/img-7.webp"}
+        src={"/hotel-principado-1.jpg"}
         fill
         priority
         quality={75}

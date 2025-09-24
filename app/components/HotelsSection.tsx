@@ -6,20 +6,20 @@ const services = [
     title: "Hotel Ambassador Inn",
     description:
       "Sumergite en nuestras piscinas y disfrutá de un descanso único.",
-    imageUrl: "/hotel-ambassador.webp",
+    imageUrl: "/hotel-ambassador-1.jpg",
     site: "https://hotelambassadorinn.com/",
   },
   {
     title: "Grand Hotel City",
     description:
       "Diversión, buena comida y hospitalidad en el corazón de Termas.",
-    imageUrl: "/hotel-city.webp",
+    imageUrl: "/hotel-city-1.jpg",
     site: "https://grandhotelcity.com/",
   },
   {
     title: "Hotel Panamericano",
     description: "Relajate, renovate y encontrá tu bienestar en cada detalle.",
-    imageUrl: "/hotel-panamericano.webp",
+    imageUrl: "/hotel-panamericano-1.jpg",
     site: "https://hotelpanamericanotermal.com/",
   },
   {
@@ -51,7 +51,7 @@ const HotelsSection = () => {
             src={service.imageUrl}
             alt={service.title}
             fill
-            className="object-cover object-left transition-transform duration-500 group-hover:scale-110"
+            className="object-cover transition-transform duration-500 group-hover:scale-110"
           />
           {/* Overlay */}
           <div className="absolute inset-0 bg-black/50 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />

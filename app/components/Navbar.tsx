@@ -33,31 +33,27 @@ const Navbar = () => {
           <div className="font-secondary container mx-auto flex items-center justify-between py-4">
             <div className="flex space-x-4">
               <Link
-                href="#"
+                href="https://www.facebook.com/profile.php?id=61580480652128"
+                target="_blank"
                 className="hover:text-accent transition-colors duration-200"
               >
                 <FaFacebookF className="h-6 w-6" />
               </Link>
               <Link
-                href="#"
+                href="https://www.instagram.com/gattella_industria_turistica/"
+                target="_blank"
                 className="hover:text-accent transition-colors duration-200"
               >
                 <FaInstagram className="h-6 w-6" />
               </Link>
-              <Link
-                href="#"
-                className="hover:text-accent transition-colors duration-200"
-              >
-                <FaTiktok className="h-6 w-6" />
-              </Link>
             </div>
             <Link
-              href="https://wa.me/+543858480489"
+              href="https://wa.me/+543858538691"
               target="_blank"
               className="hover:text-accent flex items-center gap-2 transition-colors duration-200"
             >
               <FaPhoneAlt />
-              <p>+54 (3858) 48 0489</p>
+              <p>+54 9 3858 53-8691</p>
             </Link>
           </div>
         </div>

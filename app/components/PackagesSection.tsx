@@ -45,7 +45,7 @@ const PackagesSection = () => {
               Similique, porro!
             </p>
             <Link
-              href={"mailto:"}
+              href={"mailto:reservas@gattellaindustriaturistica.com"}
               className="hover:bg-primary font-secondary bg-secondary hover:shadow-dark/50 text-shadow-dark/20 mt-6 cursor-pointer px-6 py-2 text-lg font-semibold text-white transition duration-500 ease-in-out text-shadow-md hover:shadow-md"
             >
               Ver mas
@@ -54,21 +54,21 @@ const PackagesSection = () => {
         </div>
         <div className="grid h-full w-full grid-cols-2 grid-rows-2 gap-4">
           <Image
-            src="/termalazo-3.jpg"
+            src="/hotel-city-4.jpg"
             alt="paquetes"
             width={800}
             height={600}
             className="h-full w-full object-cover object-top"
           />
           <Image
-            src="/hotel-city-2.webp"
+            src="/hotel-panamericano-2.jpg"
             alt="paquetes"
             width={800}
             height={600}
             className="h-full w-full object-cover"
           />
           <Image
-            src="/hotel-principado-2.webp"
+            src="/hotel-principado-1.jpg"
             alt="paquetes"
             width={800}
             height={600}
