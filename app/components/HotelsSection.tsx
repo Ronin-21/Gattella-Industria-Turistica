@@ -51,7 +51,7 @@ const HotelsSection = () => {
             src={service.imageUrl}
             alt={service.title}
             fill
-            className="object-cover transition-transform duration-500 group-hover:scale-110"
+            className="object-cover object-left transition-transform duration-500 group-hover:scale-110"
           />
           {/* Overlay */}
           <div className="absolute inset-0 bg-black/50 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />

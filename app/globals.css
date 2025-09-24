@@ -9,7 +9,8 @@
   --font-primary: "Poppins", sans-serif;
   --font-secondary: "Poppins", sans-serif;
   --font-title: "Restora";
-  --font-hero: "Restora";
+  --font-hero: "Restora", serif;
+  --font-termalazo: "Seymour One", serif;
 }
 
 #root {

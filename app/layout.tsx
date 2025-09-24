@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
+import { Poppins, Seymour_One } from "next/font/google";
 import localFont from "next/font/local";
 import NavbarComponent from "./components/Navbar";
 import "./globals.css";
@@ -8,6 +8,13 @@ import Footer from "./components/Footer";
 const poppins = Poppins({
   variable: "--font-primary",
   weight: ["400", "600"],
+  subsets: ["latin"],
+  display: "swap",
+});
+
+const seymour = Seymour_One({
+  variable: "--font-termalazo",
+  weight: ["400"],
   subsets: ["latin"],
   display: "swap",
 });
@@ -30,7 +37,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es" suppressHydrationWarning>
-      <body className={`${restora.variable} ${poppins.variable} antialiased`}>
+      <body
+        className={`${restora.variable} ${poppins.variable} ${seymour.variable} antialiased`}
+      >
         {/* <ThemeInit /> */}
         <NavbarComponent />
         {children}

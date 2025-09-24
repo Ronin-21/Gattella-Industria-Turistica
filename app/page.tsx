@@ -5,7 +5,6 @@ import Hero from "./components/Hero";
 import HotelsSection from "./components/HotelsSection";
 import PackagesSection from "./components/PackagesSection";
 import ServicesSection from "./components/ServicesSection";
-import TestimonialsSection from "./components/TestimonialsSection";
 import WelcomeSection from "./components/WelcomeSection";
 
 export default function Home() {
@@ -16,7 +15,7 @@ export default function Home() {
       <AboutSection />
       <HotelsSection />
       <ServicesSection />
-      <TestimonialsSection />
+      {/* <TestimonialsSection /> */}
       <PackagesSection />
       <ContactSection />
       <BannerFooter />

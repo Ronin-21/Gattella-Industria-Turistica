@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { FaFacebookF, FaInstagram, FaTiktok } from "react-icons/fa";
+import { FaFacebookF, FaInstagram } from "react-icons/fa";
 
 const Footer = () => {
   // Función para desplazarse a una sección
@@ -43,12 +43,6 @@ const Footer = () => {
               className="hover:text-accent transition-colors duration-100"
             >
               <FaInstagram />
-            </Link>
-            <Link
-              href={"/"}
-              className="hover:text-accent transition-colors duration-100"
-            >
-              <FaTiktok />
             </Link>
           </div>
         </div>
@@ -104,7 +98,8 @@ const Footer = () => {
         <div className="flex flex-col items-center justify-center gap-2 text-center md:items-center md:text-left">
           <p className="mb-4 text-lg font-semibold md:text-2xl">Contáctos</p>
           <p>Las Termas de Rio Hondo - Sgo. del Estero</p>
-          <p>+54 9 3858 42-1018</p>
+          <p>Argentina</p>
+          <p>+54 9 3858 53-8691</p>
           <Link href={"mailto:reservas@gattellaindustriaturistica.com"}>
             reservas@gattellaindustriaturistica.com
           </Link>
@@ -114,8 +109,8 @@ const Footer = () => {
       {/* Derechos y autoría */}
       <div className="border-accent/30 mt-8 border-t-2 px-4 pt-6 pb-8 text-center">
         <p className="text-sm text-white md:text-base">
-          © 2025 Hotel City · Todos los derechos reservados · Sitio
-          desarrollado por
+          © 2025 Gattella Industria Turística · Todos los derechos reservados ·
+          Sitio desarrollado por
           <Link
             href={"https://ronin-webdesign.vercel.app/"}
             target="_blank"

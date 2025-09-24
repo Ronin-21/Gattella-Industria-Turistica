@@ -17,31 +17,32 @@ const ServicesSection = () => {
         {/* Images */}
         <div className="relative h-[600px] w-full md:w-1/2">
           <Image
-            alt="Servicios"
-            src="/img-7.webp"
+            alt="termalazo"
+            src="/termalazo-1.jpg"
             width={700}
             height={500}
             className="shadow-dark/50 top-0 left-0 w-full shadow-lg md:absolute md:w-[700px]"
           />
           <Image
-            alt="Servicios"
-            src="/img-5.webp"
+            alt="termalazo"
+            src="/termalazo-2.jpg"
             width={400}
             height={400}
             className="shadow-dark/50 right-0 bottom-20 h-60 w-full object-cover shadow-lg md:absolute md:w-[400px]"
           />
           <div className="bg-primary shadow-dark/50 absolute bottom-0 flex h-40 max-w-96 items-center p-5 text-center leading-relaxed text-white shadow-lg">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
-              impedit fuga at. Vel, culpa ea?
+              En Gattella Industria Turística, ofrecemos más que alojamiento,
+              creamos experiencias inolvidables.
             </p>
           </div>
         </div>
         {/* Content */}
         <div className="flex h-full w-full flex-col items-start gap-5 p-10 md:w-1/2">
-          <p className="text-secondary">Nuestros Servicios</p>
-          <h3 className="font-title text-primary text-5xl font-semibold">
-            Lorem ipsum, dolor sit amet
+          <p className="text-secondary">Nuestros Eventos</p>
+          <h3 className="font-termalazo text-5xl font-semibold text-cyan-400">
+            TER<span className="text-lime-400">MAL</span>
+            <span className="text-orange-400">AZO</span>
           </h3>
           <p className="text-dark/60 mt-10">
             La experiencia que convierte a Termas de Río Hondo en el verdadero
