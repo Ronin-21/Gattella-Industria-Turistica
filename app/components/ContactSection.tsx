@@ -9,17 +9,17 @@ const ContactSection = () => {
     >
       <Image
         alt="Contact Background"
-        src={"/hotel-principado-1.jpg"}
+        src={"/hotel-principado-1.webp"}
         fill
         priority
         quality={75}
         className="object-cover"
       />
       <form className="bg-light/40 shadow-dark/50 z-10 flex min-h-[500px] w-full flex-col items-center justify-center gap-5 py-6 shadow-lg backdrop-blur-sm md:w-[850px]">
-        <h4 className="font-title text-accent text-shadow-dark/50 text-5xl font-semibold text-shadow-md">
+        <h4 className="font-title text-accent text-shadow-dark/50 text-4xl md:text-5xl font-semibold text-shadow-md">
           Contacto
         </h4>
-        <p className="w-full max-w-xl text-center">
+        <p className="w-full max-w-xl text-center text-sm md:text-base">
           Estamos para ayudarte, escribinos y conversemos sobre tu próxima
           experiencia
         </p>

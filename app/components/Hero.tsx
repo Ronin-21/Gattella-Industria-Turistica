@@ -12,7 +12,7 @@ const Hero = () => {
       {/* Imagen de fondo */}
       {
         <Image
-          src="/hotel-city-3.jpg"
+          src="/hotel-city-3.webp"
           alt="Portada Dique Rio Dulce"
           fill
           priority

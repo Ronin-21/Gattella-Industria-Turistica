@@ -56,7 +56,7 @@ export default function ContactForm() {
   return (
     <form
       onSubmit={handleSubmit}
-      className="flex w-full flex-col items-center gap-4 md:w-2xl"
+      className="flex w-full flex-col items-center gap-4 px-5 md:w-2xl"
     >
       <div className="flex w-full flex-col items-center gap-5 md:flex-row">
         <input

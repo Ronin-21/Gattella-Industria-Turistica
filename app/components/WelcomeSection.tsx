@@ -4,7 +4,7 @@ const WelcomeSection = () => {
   return (
     <section className="relative container mx-auto my-20 min-h-[700px]">
       {/* contenido */}
-      <div className="bg-dark text-light shadow-dark/50 flex min-h-[400px] w-full flex-col items-center gap-6 p-8 text-center leading-relaxed tracking-wide shadow-lg md:absolute md:top-0 md:right-0 md:w-[750px] lg:p-16 2xl:w-[900px]">
+      <div className="bg-dark text-light shadow-dark/50 flex min-h-[400px] w-full flex-col items-center gap-6 p-8 text-center leading-relaxed tracking-wide shadow-lg md:absolute md:top-0 md:right-0 md:w-[750px] lg:p-16 2xl:w-[900px] text-sm md:text-base">
         <h3 className="font-title text-accent text-4xl leading-relaxed tracking-wide">
           Quienes Somos?
         </h3>
@@ -25,7 +25,7 @@ const WelcomeSection = () => {
       {/* imagen */}
       <div className="shadow-dark/50 left-0 shadow-lg md:absolute md:bottom-0">
         <Image
-          src="/img-1.webp"
+          src="/welcome.webp"
           alt="Welcome"
           width={700}
           height={600}

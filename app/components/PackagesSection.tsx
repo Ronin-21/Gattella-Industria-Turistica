@@ -7,18 +7,18 @@ const PackagesSection = () => {
       id="paquetes"
       className="my-20 flex min-h-screen w-full flex-col items-center justify-center gap-20"
     >
-      <div className="flex w-full max-w-3xl flex-col items-center justify-center gap-8 text-center">
-        <h2 className="text-primary font-title text-shadow-dark/30 text-3xl font-bold text-shadow-sm sm:text-4xl md:text-5xl">
+      <div className="flex w-full max-w-3xl flex-col items-center justify-center gap-8 px-5 text-center">
+        <h2 className="text-primary font-title text-shadow-dark/30 text-4xl font-bold text-shadow-sm md:text-5xl">
           Travel Sale
         </h2>
-        <p>
+        <p className="text-sm md:text-base">
           Explorá cada hotel, dejate inspirar por sus espacios y contactanos hoy
           mismo para asegurar tu lugar al mejor precio. Porque las mejores
           experiencias… ¡también están en oferta!
         </p>
       </div>
-      <div className="flex h-[600px] w-full max-w-7xl flex-col items-center justify-center gap-4 md:flex-row">
-        <div className="relative flex h-full w-full items-center justify-center overflow-hidden md:w-[550px]">
+      <div className="flex w-full max-w-7xl flex-col items-center justify-center gap-4 md:h-[600px] md:flex-row">
+        <div className="relative flex h-[400px] w-full items-center justify-center overflow-hidden md:h-full md:w-[550px]">
           {/* <Image
             src="/img-6.webp"
             alt="paquetes"
@@ -54,30 +54,30 @@ const PackagesSection = () => {
             </Link>
           </div>
         </div>
-        <div className="grid h-full w-full grid-cols-2 grid-rows-2 gap-4">
+        <div className="grid h-full w-full grid-cols-2 grid-rows-2 gap-2 md:gap-4">
           <Image
-            src="/hotel-city-4.jpg"
-            alt="paquetes"
-            width={800}
-            height={600}
-            className="h-full w-full object-cover object-top"
-          />
-          <Image
-            src="/hotel-panamericano-2.jpg"
+            src="/hotel-city-4.webp"
             alt="paquetes"
             width={800}
             height={600}
             className="h-full w-full object-cover"
           />
           <Image
-            src="/hotel-principado-1.jpg"
+            src="/hotel-panamericano-2.webp"
             alt="paquetes"
             width={800}
             height={600}
             className="h-full w-full object-cover"
           />
           <Image
-            src="/hotel-ambassador-2.jpg"
+            src="/hotel-principado-1.webp"
+            alt="paquetes"
+            width={800}
+            height={600}
+            className="h-full w-full object-cover"
+          />
+          <Image
+            src="/hotel-ambassador-2.webp"
             alt="paquetes"
             width={800}
             height={600}

@@ -6,20 +6,20 @@ const services = [
     title: "Hotel Ambassador Inn",
     description:
       "Sumergite en nuestras piscinas y disfrutá de un descanso único.",
-    imageUrl: "/hotel-ambassador-1.jpg",
+    imageUrl: "/hotel-ambassador-1.webp",
     site: "https://hotelambassadorinn.com/",
   },
   {
     title: "Grand Hotel City",
     description:
       "Diversión, buena comida y hospitalidad en el corazón de Termas.",
-    imageUrl: "/hotel-city-1.jpg",
+    imageUrl: "/hotel-city-1.webp",
     site: "https://grandhotelcity.com/",
   },
   {
     title: "Hotel Panamericano",
     description: "Relajate, renovate y encontrá tu bienestar en cada detalle.",
-    imageUrl: "/hotel-panamericano-1.jpg",
+    imageUrl: "/hotel-panamericano-1.webp",
     site: "https://hotelpanamericanotermal.com/",
   },
   {

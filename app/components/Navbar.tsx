@@ -3,7 +3,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import { FaFacebookF, FaInstagram, FaPhoneAlt, FaTiktok } from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaPhoneAlt } from "react-icons/fa";
+import { TbMenuDeep, TbX } from "react-icons/tb";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -29,8 +30,8 @@ const Navbar = () => {
       {/* Sub Navbar */}
       <div className="bg-dark text-light w-full">
         {/* Socials */}
-        <div className="border-accent/10 border-b">
-          <div className="font-secondary container mx-auto flex items-center justify-between py-4">
+        <div>
+          <div className="border-accent/30 font-secondary container mx-auto flex items-center justify-between border-b px-5 py-4 md:px-0">
             <div className="flex space-x-4">
               <Link
                 href="https://www.facebook.com/profile.php?id=61580480652128"
@@ -50,19 +51,71 @@ const Navbar = () => {
             <Link
               href="https://wa.me/+543858538691"
               target="_blank"
-              className="hover:text-accent flex items-center gap-2 transition-colors duration-200"
+              className="hover:text-accent hidden items-center gap-2 transition-colors duration-200 md:flex"
             >
               <FaPhoneAlt />
               <p>+54 9 3858 53-8691</p>
             </Link>
+            {/* Mobile Navigation */}
+
+            <div className="z-20 flex md:hidden">
+              <button
+                onClick={() => setIsOpen(!isOpen)}
+                aria-label={isOpen ? "Cerrar menú" : "Abrir menú"}
+                className="text-white focus:outline-none"
+              >
+                {isOpen ? (
+                  <TbX size={40} className="text-dark" />
+                ) : (
+                  <TbMenuDeep size={30} />
+                )}
+              </button>
+            </div>
+
+            {/* Mobile Menu Overlay */}
+
+            {isOpen && (
+              <div className="absolute top-0 left-0 z-10 flex h-dvh w-full flex-col items-center justify-center gap-10 bg-white md:hidden">
+                <button
+                  onClick={scrollToTop}
+                  className="text-dark/80 text-3xl font-semibold"
+                >
+                  Inicio
+                </button>
+                <button
+                  onClick={() => scrollToSection("hoteles")}
+                  className="text-dark/80 text-3xl font-semibold"
+                >
+                  Hoteles
+                </button>
+                <button
+                  onClick={() => scrollToSection("servicios")}
+                  className="text-dark/80 text-3xl font-semibold"
+                >
+                  Servicios
+                </button>
+                <button
+                  onClick={() => scrollToSection("paquetes")}
+                  className="text-dark/80 text-3xl font-semibold"
+                >
+                  Travel Sale
+                </button>
+                <button
+                  onClick={() => scrollToSection("contacto")}
+                  className="text-dark/80 text-3xl font-semibold"
+                >
+                  Contacto
+                </button>
+              </div>
+            )}
           </div>
         </div>
         {/* Logo */}
-        <div className="border-accent/10 border-b">
-          <div className="container mx-auto flex items-center justify-center py-4">
+        <div>
+          <div className="border-accent/30 container mx-auto flex items-center justify-center border-b py-4">
             <Link href="/" className="relative h-24 w-40 overflow-hidden">
               <Image
-                src={"/logo-white-2.webp"}
+                src={"/logo-color-2.png"}
                 alt="logo"
                 fill
                 className="object-contain"
@@ -111,49 +164,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-{
-  /* Mobile Navigation */
-}
-{
-  /* <div className="md:hidden">
-  <button
-    onClick={() => setIsOpen(!isOpen)}
-    aria-label={isOpen ? "Cerrar menú" : "Abrir menú"}
-    className="text-dark/80 hover:text-primary focus:outline-none"
-  >
-    {isOpen ? <TbX /> : <TbMenuDeep />}
-  </button>
-</div> */
-}
-{
-  /* Mobile Menu Overlay */
-}
-/* {isOpen && (
-  <div className="absolute top-0 left-0 flex flex-col items-center justify-center w-full gap-10 bg-white -z-10 h-dvh md:hidden">
-    <button
-      onClick={scrollToTop}
-      className="text-3xl font-semibold text-dark/80"
-    >
-      Inicio
-    </button>
-    <button
-      onClick={() => scrollToSection("galeria")}
-      className="text-3xl font-semibold text-dark/80"
-    >
-      Galería
-    </button>
-    <button
-      onClick={() => scrollToSection("servicios")}
-      className="text-3xl font-semibold text-dark/80"
-    >
-      Servicios
-    </button>
-    <button
-      onClick={() => scrollToSection("paquetes")}
-      className="text-3xl font-semibold text-dark/80"
-    >
-      Paquetes
-    </button>
-  </div>
-)} */
