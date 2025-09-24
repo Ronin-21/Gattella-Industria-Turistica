@@ -3,13 +3,11 @@ import Link from "next/link";
 import { BiCheck } from "react-icons/bi";
 
 const features = [
-  "Tv por cable",
-  "Wifi",
-  "Sommier",
-  "Baño privado",
-  "Aire acondicionado",
-  "Baño privado",
-  "Aire acondicionado",
+  "3 noches de alojamiento",
+  "Todas las comidas con bebidas incluídas",
+  "Actividades durante todo el dia",
+  "Fiestas temáticas",
+  "Gran elección de la Reina del Termalazo",
 ];
 
 const ServicesSection = () => {
@@ -46,10 +44,16 @@ const ServicesSection = () => {
             Lorem ipsum, dolor sit amet
           </h3>
           <p className="text-dark/60 mt-10">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora
-            placeat commodi blanditiis accusamus similique alias? Non culpa, sed
-            ex tenetur blanditiis esse molestias neque reprehenderit, dolor
-            debitis aliquid? Delectus, dolorum.
+            La experiencia que convierte a Termas de Río Hondo en el verdadero
+            Caribe Santiagueño. Durante 4 días y 3 noches, viví diversión sin
+            pausa: actividades durante el día, shows en vivo todas las noches,
+            la elección de la Reina y una atmósfera de fiesta que no se
+            encuentra en ningún otro lugar.
+          </p>
+          <p className="text-dark/60">
+            Con amigos, en pareja o en grupo, vení a disfrutar de música,
+            alegría y energía termal en un evento que vas a recordar para
+            siempre.
           </p>
 
           <div className="mt-10">

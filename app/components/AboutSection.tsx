@@ -7,11 +7,11 @@ const AboutSection = () => {
       <div className="container mx-auto flex min-h-[400px] flex-col items-center justify-around md:flex-row md:px-10">
         <div className="flex h-full flex-col items-start justify-center gap-10 md:w-1/2">
           <h3 className="font-title text-primary text-5xl font-semibold">
-            Lorem ipsum dolor sit amet
+            Travel Sales
           </h3>
           <p className="max-w-sm">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui,
-            maxime?
+            Es hora de viajar: precios especiales para experiencias únicas te
+            esperan.
           </p>
           <Link
             href={"https://wa.me/+543858421018"}

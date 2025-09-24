@@ -3,37 +3,34 @@ import Link from "next/link";
 
 const services = [
   {
-    title: "Hotel Ambassador",
+    title: "Hotel Ambassador Inn",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Sumergite en nuestras piscinas y disfrutá de un descanso único.",
     imageUrl: "/hotel-ambassador.webp",
     site: "https://hotelambassadorinn.com/",
   },
   {
-    title: "Hotel City",
+    title: "Grand Hotel City",
     description:
-      "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "Diversión, buena comida y hospitalidad en el corazón de Termas.",
     imageUrl: "/hotel-city.webp",
     site: "https://grandhotelcity.com/",
   },
   {
     title: "Hotel Panamericano",
-    description:
-      "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    description: "Relajate, renovate y encontrá tu bienestar en cada detalle.",
     imageUrl: "/hotel-panamericano.webp",
     site: "https://hotelpanamericanotermal.com/",
   },
   {
-    title: "Hotel Principado",
-    description:
-      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    title: "Grand Hotel Principado",
+    description: "Descubrí la elegancia, combinada con tradición y confort.",
     imageUrl: "/hotel-principado.webp",
     site: "https://grandhotelprincipado.com/",
   },
   {
     title: "Hotel Suiza",
-    description:
-      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
+    description: "Elegí el clásico de Termas y volvé a sentirte en casa.",
     imageUrl: "/hotel-suiza.webp",
     site: "https://hotelsuizatermal.com/",
   },
