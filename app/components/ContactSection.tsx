@@ -15,8 +15,8 @@ const ContactSection = () => {
         quality={75}
         className="object-cover"
       />
-      <form className="bg-light/40 shadow-dark/50 z-10 flex min-h-[500px] w-full flex-col items-center justify-center gap-5 py-6 shadow-lg backdrop-blur-sm md:w-[850px]">
-        <h4 className="font-title text-accent text-shadow-dark/50 text-4xl md:text-5xl font-semibold text-shadow-md">
+      <div className="bg-light/40 shadow-dark/50 z-10 flex min-h-[500px] w-full flex-col items-center justify-center gap-5 py-6 shadow-lg backdrop-blur-sm md:w-[850px]">
+        <h4 className="font-title text-accent text-shadow-dark/50 text-4xl font-semibold text-shadow-md md:text-5xl">
           Contacto
         </h4>
         <p className="w-full max-w-xl text-center text-sm md:text-base">
@@ -25,7 +25,7 @@ const ContactSection = () => {
         </p>
         <ContactForm />
         <p></p>
-      </form>
+      </div>
     </section>
   );
 };

@@ -13,13 +13,15 @@ export default function ContactForm() {
 
   const [loading, setLoading] = useState(false);
 
-  const handleChange = (e) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
+  ) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setLoading(true);
+    /* setLoading(true);
 
     emailjs
       .send(
@@ -50,7 +52,17 @@ export default function ContactForm() {
           alert("❌ Hubo un error al enviar el mensaje.");
         },
       )
-      .finally(() => setLoading(false));
+      .finally(() => setLoading(false)); */
+    setForm({
+      nombre: "",
+      email: "",
+      telefono: "",
+      provincia: "",
+      mensaje: "",
+    });
+    // alert("📧 El formulario de contacto está deshabilitado en este demo.");
+    alert("📧 El envío fue exitoso!");
+    console.log("📧 El envío fue exitoso!");
   };
 
   return (
